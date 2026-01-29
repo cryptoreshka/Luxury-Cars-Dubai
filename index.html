@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Cars Dubai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">DubaiCars</a>
+
+  <ul class="nav-menu">
+    <li><a href="#home">Главная</a></li>
+    <li><a href="#cars">Автопарк</a></li>
+    <li><a href="#conditions">Условия</a></li>
+    <li><a href="#contact">Контакты</a></li>
+    <li><a href="#faq">Вопросы</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-btn">Забронировать</a>
+</nav>
+
+<header class="header" id="home">
+  <h1 class="hero-h">Аренда дорогих<br>авто в Дубае</h1>
+  <p class="hero-text">Принимаем аванс даже российскими картами</p>
+
+  <a href="#cars" class="button-car">Каталог машин</a>
+</header>
+
+<section class="why-us">
+  <h2 class="h2-why">Почему выбирают нас</h2>
+
+  <div class="cards-section">
+    <div class="wide-card">🚗 Собственный автопарк</div>
+    <div class="wide-card">⚡ Быстрая подача</div>
+    <div class="wide-card">🛡️ Прозрачные условия</div>
+    <div class="wide-card">📞 Поддержка 24/7</div>
+  </div>
+</section>
+
+
+<section class="cars-section" id="cars">
+  <div class="cars-grid">
+
+    <!-- Rolls -->
+    <div class="car-card">
+      <img src="img/Rolls royce.jfif" alt="Rolls-Royce Phantom">
+
+      <div class="car-top">
+        <div class="car-info">
+          <h3>Rolls-Royce Phantom</h3>
+          <div class="car-price">$1450 / day</div>
+        </div>
+
+        <div class="car-buttons">
+          <button class="car-btn order" data-car="Rolls-Royce Phantom">Заказать</button>
+          <button class="car-btn more">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lamborghini -->
+    <div class="car-card">
+      <img src="img/Lamborgini.jfif" alt="Lamborghini Huracán">
+
+      <div class="car-top">
+        <div class="car-info">
+          <h3>Lamborghini Huracán</h3>
+          <div class="car-price">$1050 / day</div>
+        </div>
+
+        <div class="car-buttons">
+          <button class="car-btn order" data-car="Lamborghini Huracán">Заказать</button>
+          <button class="car-btn more">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ferrari -->
+    <div class="car-card">
+      <img src="img/Ferari.jfif" alt="Ferrari 488">
+
+      <div class="car-top">
+        <div class="car-info">
+          <h3>Ferrari 488</h3>
+          <div class="car-price">$950 / day</div>
+        </div>
+
+        <div class="car-buttons">
+          <button class="car-btn order" data-car="Ferrari 488">Заказать</button>
+          <button class="car-btn more">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mercedes -->
+    <div class="car-card">
+      <img src="img/Mercedes benz.jfif" alt="Mercedes S AMG">
+
+      <div class="car-top">
+        <div class="car-info">
+          <h3>Mercedes S AMG</h3>
+          <div class="car-price">$650 / day</div>
+        </div>
+
+        <div class="car-buttons">
+          <button class="car-btn order" data-car="Mercedes S AMG">Заказать</button>
+          <button class="car-btn more">Подробнее</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CALCULATOR BUTTON -->
+<div class="calc-toggle" id="calcToggle">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- CALCULATOR PANEL -->
+<div class="calculator-panel" id="calculator">
+  <h3>Калькулятор аренды</h3>
+
+  <label>Автомобиль</label>
+  <select id="car">
+    <option value="1450">Rolls-Royce Phantom</option>
+    <option value="1050">Lamborghini Huracán</option>
+    <option value="950">Ferrari 488</option>
+    <option value="650">Mercedes S AMG</option>
+  </select>
+
+  <label>Дней аренды</label>
+  <input type="number" id="days" value="1" min="1">
+
+  <label>Доставка</label>
+  <select id="delivery">
+    <option value="0">Отель — бесплатно</option>
+    <option value="150">Аэропорт — $150</option>
+  </select>
+
+  <label>Валюта</label>
+  <select id="currency">
+    <option value="USD">USD</option>
+    <option value="AED">AED</option>
+  </select>
+
+  <div class="calc-price">
+    <span id="price">1450</span>
+    <small id="currencyLabel">$</small>
+  </div>
+</div>
+
+
+
+<section class="conditions-lux" id="conditions">
+  <div class="conditions-inner">
+
+    <!-- CAR -->
+    <div class="conditions-car animate-left">
+      <img src="img/Mercedes benz.jfif" alt="Mercedes AMG">
+    </div>
+
+    <!-- TEXT -->
+    <div class="conditions-text animate-right">
+      <h2>Условия аренды</h2>
+
+      <p>
+        Мы сделали процесс аренды максимально простым и прозрачным,
+        чтобы вы могли наслаждаться автомобилем премиум-класса
+        без лишних формальностей и скрытых условий.
+      </p>
+
+      <ul>
+        <li><strong>Документы:</strong> действующий загранпаспорт и водительское удостоверение международного образца.</li>
+        <li><strong>Возраст:</strong> от 21 года (для суперкаров — от 25 лет).</li>
+        <li><strong>Депозит:</strong> возвратный, сумма зависит от модели автомобиля.</li>
+        <li><strong>Срок аренды:</strong> минимум 24 часа.</li>
+        <li><strong>Доставка:</strong> в отель, апартаменты или аэропорт Дубая.</li>
+        <li><strong>Страховка:</strong> включена в стоимость аренды.</li>
+      </ul>
+
+      <p class="conditions-note">
+        Все автомобили проходят регулярное обслуживание и подаются
+        в идеальном техническом и визуальном состоянии.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <h2 class="faq-title">Часто задаваемые вопросы</h2>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Нужен ли депозит при аренде автомобиля?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          В большинстве случаев депозит требуется и служит гарантией сохранности автомобиля.
+          Его размер зависит от класса машины и срока аренды. Для люксовых и суперкаров депозит
+          может быть выше, однако мы всегда заранее сообщаем точную сумму. После возврата авто
+          депозит полностью возвращается в течение нескольких рабочих дней.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Можно ли арендовать авто с туристическими правами?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Да, туристы могут арендовать автомобиль в Дубае. Принимаются международные водительские
+          удостоверения или права стран, утверждённых в ОАЭ. Также потребуется паспорт и виза.
+          Если вы не уверены, подходят ли ваши документы — просто напишите нам, мы проверим заранее.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Есть ли ограничение по пробегу?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Да, стандартно в аренду включён дневной лимит пробега. Он зависит от автомобиля и обычно
+          составляет 250–300 км в сутки. При необходимости вы можете заранее увеличить лимит или
+          оплатить дополнительные километры по фиксированному тарифу без скрытых условий.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Осуществляете ли вы доставку автомобиля?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Да, мы доставляем автомобиль в любую точку Дубая: отели, аэропорты, апартаменты и виллы.
+          Также возможна подача авто к определённому времени. Это особенно удобно для гостей города,
+          которые ценят комфорт и своё время.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Что входит в стоимость аренды?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          В стоимость аренды включены страховка, техническое обслуживание, чистый автомобиль
+          с полным баком (или оговорённым уровнем топлива), а также наша поддержка 24/7.
+          Вы получаете полностью готовый к поездке автомобиль без дополнительных скрытых платежей.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer" id="contact">
+  <p>🇦🇪 +971 50 123 45 67</p>
+  <p>🇷🇺 +7 900 123-45-67</p>
+  <p>luxurycarsdubai@gmail.com</p>
+</footer>
+<script src="js/faq.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
